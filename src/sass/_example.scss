@@ -48,8 +48,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   &-item {
     display: flex;
     flex-direction: column;
@@ -58,6 +58,8 @@ ul {
 .gallery__link {
   display: flex;
   width: calc((100% - 75px) / 4);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .gallery-item__img {
   display: block;
@@ -66,8 +68,14 @@ ul {
 }
 .info {
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 4px 8px;
 }
 
 .info-item {
   color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
